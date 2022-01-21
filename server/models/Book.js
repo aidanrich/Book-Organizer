@@ -26,6 +26,14 @@ const bookSchema = new Schema({
     type: String,
     required: true,
   },
+  owned: {
+    type: Boolean,
+    default: false,
+  },
+  read: {
+    type: Boolean,
+    default: false,
+  }
 });
 
 module.exports = bookSchema;
